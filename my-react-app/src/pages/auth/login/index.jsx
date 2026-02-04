@@ -10,22 +10,20 @@ import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Separator } from "@/components/ui/separator";
 import { Eye, ShieldCheck } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
 
 const login = () => {
   const [showPassword, setShowPassword] = useState(false);
-
+ const navigate = useNavigate();
   return (
     <div className="relative min-h-screen bg-[#3563E9] flex justify-center overflow-hidden">
-      {/* Background Lines */}
       <img
         src={LinesImg}
         alt="Background lines"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* MAIN CONTAINER */}
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-center h-full min-h-screen w-full  md:px-10  gap-10 overflow-y-auto">
-        {/* LEFT SECTION */}
         <div className="w-full md:w-1/3 flex flex-col justify-center space-y-6 text-center md:text-left">
           <h1 className="text-white text-3xl font-semibold">Welcome to</h1>
 
@@ -41,7 +39,8 @@ const login = () => {
 
           <p className="text-white w-[260px] md:w-[260px] text-sm leading-relaxed mx-auto md:mx-0">
             Search nearby cars, verify your license securely, and check out with
-            your preferred payment method. PKI-ready for enterprise-grade security.
+            your preferred payment method. PKI-ready for enterprise-grade
+            security.
           </p>
 
           <img
@@ -51,63 +50,69 @@ const login = () => {
           />
         </div>
 
-        {/* RIGHT SECTION → FORM CARD */}
         <div className="w-full md:w-auto flex justify-center">
           <div className="w-[360px] bg-white rounded-2xl p-6 shadow-xl border border-blue-500 flex-shrink-0">
-            {/* Header */}
             <h2 className="text-2xl font-semibold text-gray-900">Login</h2>
             <p className="text-sm text-gray-400 mt-1">
-              Use your email or mobile number. PKI supported for enterprise users.
+              Use your email or mobile number. PKI supported for enterprise
+              users.
             </p>
 
-            {/* Email */}
             <div className="mt-3 space-y-2">
               <label className="text-sm font-medium text-gray-900">Email</label>
               <Input
-                placeholder="Hadi"
-                className="h-12 rounded-xl bg-gray-100 border-none"
+                placeholder="Enter your Email"
+                className="h-12 rounded-md mt-2 bg-gray-100 border-none"
               />
             </div>
 
-            {/* Password */}
-            <div className="mt-3 space-y-2 relative">
-              <label className="text-sm font-medium text-gray-900">Password</label>
-              <Input
-                type={showPassword ? "text" : "password"}
-                placeholder="**********"
-                className="h-12 rounded-xl bg-gray-100 border-none pr-10"
-              />
-              <Eye
-                className="absolute right-3 top-3.5 h-5 w-5 text-gray-400 cursor-pointer"
-                onClick={() => setShowPassword(!showPassword)}
-              />
+            <div className="mt-3 space-y-2">
+              <label className="text-sm font-medium text-gray-900">
+                Password
+              </label>
+
+              <div className="relative">
+                <Input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="**********"
+                  className="h-12 rounded-md mt-2 bg-gray-100 border-none pr-10"
+                />
+
+                <Eye
+                  className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400 cursor-pointer"
+                  onClick={() => setShowPassword(!showPassword)}
+                />
+              </div>
             </div>
 
-            {/* Remember Me */}
             <div className="flex items-center gap-3 mt-3">
               <Checkbox id="remember" />
-              <label htmlFor="remember" className="text-sm font-medium text-gray-900">
+              <label
+                htmlFor="remember"
+                className="text-sm font-medium text-gray-900"
+              >
                 Remember me
               </label>
-            </div>
+            </div>  
 
-            {/* Sign In */}
-            <Button className="w-full mt-3 h-12 rounded-md bg-[#3563E9] hover:bg-[#3563E9] text-white">
+            <Button
+              className="w-full mt-3 h-12 rounded-md bg-[#3563E9] hover:bg-[#3563E9] text-white"
+              onClick={() => navigate("/signup")}
+            >
               Sign in
             </Button>
 
-            {/* OR */}
             <div className="flex items-center gap-2 my-2">
               <Separator className="flex-1" />
               <span className="text-xs text-gray-400">OR</span>
               <Separator className="flex-1" />
             </div>
 
-            {/* OTP & PKI */}
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
                 variant="outline"
-                className="flex-1 h-11 rounded-xl bg-[#3563E9] text-white hover:text-white hover:bg-[#3563E9]"
+                className="flex-1 h-11 rounded-md bg-[#3563E9] text-white hover:text-white hover:bg-[#3563E9]"
+                onClick={() => navigate("/verifyOtp")}
               >
                 Continue with OTP
               </Button>
@@ -125,10 +130,12 @@ const login = () => {
               Continue as Guest
             </Button>
 
-            <p className="text-xs text-gray-400 text-center mt-3 leading-5">
+            <p className="text-xs text-gray-400 mt-3 w-5/6 leading-5">
               By signing in, you agree to our{" "}
-              <span className="underline cursor-pointer">Terms & Privacy</span>.
-              <br />© 2025 CRent Technologies
+              <span className="underline cursor-pointer">Terms</span>
+              <span className="ml-1 mr-1">&</span>
+              <span className="underline cursor-pointer"> Privacy</span>. © 2025
+              CRent Technologies
             </p>
           </div>
         </div>
