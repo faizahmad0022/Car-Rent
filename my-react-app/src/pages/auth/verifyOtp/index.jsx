@@ -15,6 +15,18 @@ const VerifyOtpScreen = () => {
   const [resendTimer, setResendTimer] = useState(60);
   const navigate = useNavigate();
 
+  // Countdown for resend OTP
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setResendTimer((prev) => (prev > 0 ? prev - 1 : 0));
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    console.log("VerifyOtpScreen mounted");
+  }, []);
+
 
   return (
     <div className="relative min-h-screen bg-[#3563E9] flex justify-center items-center">
