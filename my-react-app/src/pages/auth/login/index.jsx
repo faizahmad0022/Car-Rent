@@ -120,6 +120,7 @@ const login = () => {
               <Button
                 variant="outline"
                 className="flex-1 flex items-center justify-center gap-2 h-11 text-white hover:text-white rounded-md bg-[#3563E9] hover:bg-[#3563E9]"
+                onClick={() => navigate("/pkiLogin")} 
               >
                 <ShieldCheck className="w-3 h-3 text-white" />
                 PKI Login

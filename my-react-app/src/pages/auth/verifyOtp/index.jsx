@@ -71,13 +71,13 @@ const VerifyOtpScreen = () => {
               <h2 className="text-lg font-semibold text-gray-900">
                 Enter the 6–digit code
               </h2>
-              <Button
+             <Button
                 variant="outline"
                 className="h-8 w-24 flex items-center text-black font-semibold justify-center gap-3 rounded-sm bg-[#D6E4FD] hover:bg-[#D6E4FD] text-sm"
                 onClick={() => navigate(-1)}
               >
                 Back
-                <Undo2 className="h-4 w-4 rounded-md border border-black" />
+                <Undo2 className="h-4 w-4 rounded-full border border-black p-0.5" />
               </Button>
             </div>
 

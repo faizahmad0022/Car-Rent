@@ -11,7 +11,6 @@ import RentCarImg from "@/assets/rent-carImg.png";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Separator } from "@/components/ui/separator";
 import { ShieldCheck, Undo2 } from "lucide-react";
-    
 
 const PkiLoginScreen = () => {
   const navigate = useNavigate();
@@ -61,17 +60,16 @@ const PkiLoginScreen = () => {
                 PKI Login
               </h2>
               <Button
-  variant="outline"
-  className="h-8 w-24 flex items-center text-black font-semibold justify-center gap-3 rounded-sm bg-[#D6E4FD] hover:bg-[#D6E4FD] text-sm"
-  onClick={() => navigate(-1)}
->
-  Back
-  <Undo2 className="h-4 w-4 rounded-full border border-black bg-white p-0.5" />
-</Button>
-
+                variant="outline"
+                className="h-8 w-24 flex items-center text-black font-semibold justify-center gap-3 rounded-sm bg-[#D6E4FD] hover:bg-[#D6E4FD] text-sm"
+                onClick={() => navigate(-1)}
+              >
+                Back
+                <Undo2 className="h-4 w-4 rounded-full border border-black p-0.5" />
+              </Button>
             </div>
 
-            <p className="text-xs text-gray-500 mb-4">
+            <p className="text-xs text-gray-400 mb-4">
               Use a trusted digital certificate to sign in securely.
             </p>
 
@@ -80,7 +78,7 @@ const PkiLoginScreen = () => {
               Use System Certificate
             </Button>
 
-            <p className="text-xs text-gray-400 text-center mb-4">
+            <p className="text-xs text-gray-400 mb-4">
               Your browser/device will prompt you to choose a certificate from
               the secure keystore after you press Validate.
             </p>
@@ -92,7 +90,7 @@ const PkiLoginScreen = () => {
             </p>
             <label className="flex flex-col items-center justify-center w-full h-28 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 mb-4">
               <svg
-                className="w-8 h-8 mb-2 text-[#3563E9]"
+                className="w-10 h-10 mb-2 text-white p-2 rounded-full bg-[#3563E9] "
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -108,7 +106,9 @@ const PkiLoginScreen = () => {
               <span className="text-sm font-semibold text-gray-700">
                 Upload Certificate
               </span>
-              <span className="text-xs text-gray-400">Drag and drop here</span>
+              <span className="text-xs text-gray-400 font-bold">
+                Drag and drop here
+              </span>
               <Input type="file" className="hidden" />
             </label>
 
@@ -121,7 +121,7 @@ const PkiLoginScreen = () => {
                 placeholder="Enter Passphrase"
                 value={passphrase}
                 onChange={(e) => setPassphrase(e.target.value)}
-                className="mt-2 h-12 rounded-md bg-gray-100 border-none"
+                className="mt-2 h-12 rounded-md bg-gray-100 font-semibold border-none !placeholder-gray-300"
               />
             </div>
 
@@ -144,7 +144,7 @@ const PkiLoginScreen = () => {
               Validate & Continue
             </Button>
 
-            <p className="text-xs text-gray-400 mt-2 text-center">
+            <p className="text-xs text-gray-400 mt-2">
               Problems with certificates? Get help
               <br />© 2025 CRent Technologies
             </p>

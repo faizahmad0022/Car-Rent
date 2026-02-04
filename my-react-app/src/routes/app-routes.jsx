@@ -3,6 +3,7 @@ import Login from "../pages/auth/login";
 import SignUpScreen from "../pages/auth/signup";
 import VerifyOtpScreen from "../pages/auth/verifyOtp"; 
 import PkiLoginScreen from "../pages/auth/PkIlogin";
+import ContinueAsGuestScreen from "../pages/auth/continueAsGuest";
 
 const AppRoutes = () => {
   return (
@@ -11,7 +12,8 @@ const AppRoutes = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<SignUpScreen />} />
       <Route path="/verifyOtp" element={<VerifyOtpScreen />} />
-      <Route path="/PkiLogin" element={<PkiLoginScreen />} />
+      <Route path="/Pkilogin" element={<PkiLoginScreen />} />
+      <Route path="/continueasguest" element={<ContinueAsGuestScreen />} />
     </Routes>
   );
 };
