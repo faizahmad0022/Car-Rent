@@ -51,7 +51,7 @@ const login = () => {
         </div>
 
         <div className="w-full md:w-auto flex justify-center">
-          <div className="w-[360px] bg-white rounded-2xl p-6 shadow-xl border border-blue-500 flex-shrink-0">
+          <div className="w-[360px] bg-white rounded-sm p-6 shadow-xl border border-blue-500 flex-shrink-0">
             <h2 className="text-2xl font-semibold text-gray-900">Login</h2>
             <p className="text-sm text-gray-400 mt-1">
               Use your email or mobile number. PKI supported for enterprise
@@ -127,7 +127,9 @@ const login = () => {
               </Button>
             </div>
 
-            <Button className="w-full mt-3 h-12 rounded-md bg-gray-600 hover:bg-gray-600 hover:text-white text-white">
+            <Button className="w-full mt-3 h-12 rounded-md bg-gray-600 hover:bg-gray-600 hover:text-white text-white"
+              onClick={() => navigate("/continueAsGuest")}
+            >
               Continue as Guest
             </Button>
 

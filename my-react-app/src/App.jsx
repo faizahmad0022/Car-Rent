@@ -1,21 +1,16 @@
-// import { BrowserRouter } from "react-router-dom";
-// import AppRoutes from "./routes/app-routes";
-
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <AppRoutes />
-//     </BrowserRouter>
-//   );
-// }
-
-// export default App;
 
 
+import { useState } from "react";
 import AppRoutes from "./routes/app-routes";
 
 function App() {
-  return <AppRoutes />;
+  const [theme, setTheme] = useState("light");
+
+  return (
+    <div className={theme}>
+      <AppRoutes />
+    </div>
+  );
 }
 
 export default App;

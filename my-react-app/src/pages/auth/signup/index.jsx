@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Eye } from "lucide-react";
 import CarImg from "@/assets/car-img.svg";
 import LinesImg from "@/assets/linesimg.png";
@@ -9,6 +10,7 @@ import { Separator } from "@/components/ui/separator";
 
 const SignUpScreen = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="relative min-h-screen bg-[#3563E9] flex justify-center overflow-hidden">
@@ -46,7 +48,7 @@ const SignUpScreen = () => {
         </div>
 
         <div className="w-full md:w-auto flex justify-center">
-          <div className="w-[360px] bg-white rounded-2xl p-6 shadow-xl border border-blue-500 flex-shrink-0">
+          <div className="w-[360px] bg-white rounded-sm p-6 shadow-xl border border-blue-500 flex-shrink-0">
             <h2 className="text-2xl font-semibold text-gray-900">
               Create Account
             </h2>
@@ -106,8 +108,11 @@ const SignUpScreen = () => {
               Forgot Password
             </p>
 
-            <Button className="w-full mt-3 h-12 rounded-md bg-[#3563E9] hover:bg-[#3563E9] text-white">
-              Sign Up
+            <Button 
+              onClick={() => navigate("/dashboard")}
+              className="w-full mt-3 h-12 rounded-md bg-[#3563E9] hover:bg-[#3563E9] text-white"
+            >
+              Sign in
             </Button>
 
             <div className="flex items-center gap-2 my-2">

@@ -88,7 +88,9 @@ const PkiLoginScreen = () => {
             <p className="text-sm font-medium text-gray-900 mb-2">
               Upload Certificate
             </p>
-            <label className="flex flex-col items-center justify-center w-full h-28 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 mb-4">
+
+            <div className="p-2 hover:bg-gray-100 bg-gray-100 rounded-sm">
+              <label className="flex flex-col items-center justify-center w-full h-28 border-gray-300 rounded-lg cursor-pointer  mb-4">
               <svg
                 className="w-10 h-10 mb-2 text-white p-2 rounded-full bg-[#3563E9] "
                 fill="none"
@@ -106,11 +108,13 @@ const PkiLoginScreen = () => {
               <span className="text-sm font-semibold text-gray-700">
                 Upload Certificate
               </span>
-              <span className="text-xs text-gray-400 font-bold">
+              <span className="text-xs pt-2 pb-2 text-gray-400 font-bold">
                 Drag and drop here
               </span>
               <Input type="file" className="hidden" />
             </label>
+            </div>
+            
 
             {/* Passphrase */}
             <div className="mb-3">
@@ -125,7 +129,6 @@ const PkiLoginScreen = () => {
               />
             </div>
 
-            {/* Remember Device */}
             <div className="flex items-center gap-2 mb-4">
               <Checkbox
                 id="rememberDevice"
@@ -139,7 +142,6 @@ const PkiLoginScreen = () => {
               </label>
             </div>
 
-            {/* Validate Button */}
             <Button className="w-full h-12 rounded-md bg-[#3563E9] hover:bg-[#3563E9] text-white font-semibold mb-2">
               Validate & Continue
             </Button>

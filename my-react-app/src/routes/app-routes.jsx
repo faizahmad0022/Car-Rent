@@ -1,9 +1,12 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import RentLayout from "../layout";
 import Login from "../pages/auth/login";
 import SignUpScreen from "../pages/auth/signup";
-import VerifyOtpScreen from "../pages/auth/verifyOtp"; 
+import DashboardRcentCar from "../pages/dashboard";
 import PkiLoginScreen from "../pages/auth/PkIlogin";
+import VerifyOtpScreen from "../pages/auth/verifyOtp"; 
+import { Routes, Route, Navigate } from "react-router-dom";
 import ContinueAsGuestScreen from "../pages/auth/continueAsGuest";
+
 
 const AppRoutes = () => {
   return (
@@ -14,6 +17,10 @@ const AppRoutes = () => {
       <Route path="/verifyOtp" element={<VerifyOtpScreen />} />
       <Route path="/Pkilogin" element={<PkiLoginScreen />} />
       <Route path="/continueasguest" element={<ContinueAsGuestScreen />} />
+      
+      <Route element={<RentLayout />}>
+        <Route path="/dashboard" element={<DashboardRcentCar />} />
+      </Route>
     </Routes>
   );
 };

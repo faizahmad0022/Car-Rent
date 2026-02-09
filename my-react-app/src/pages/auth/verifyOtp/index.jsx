@@ -66,7 +66,7 @@ const VerifyOtpScreen = () => {
 
 
         <div className="w-full md:w-auto flex justify-center">
-          <Card className="w-[360px] rounded-2xl p-3 shadow-xl border border-blue-500">
+          <Card className="w-[360px] rounded-sm p-3 shadow-xl border border-blue-500">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-lg font-semibold text-gray-900">
                 Enter the 6–digit code
