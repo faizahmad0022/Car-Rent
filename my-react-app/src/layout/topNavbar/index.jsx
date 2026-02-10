@@ -5,12 +5,14 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import CarTextImg from "@/assets/cartextimg.svg";
-import { Search, Heart, Bell, Settings } from "lucide-react";
+import { Search, Heart, Bell, Settings2 } from "lucide-react";
+
 
 const TopNavbar = () => {
   return (
     <header className="w-full bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center">
+        <div className="flex items-center gap-2">
         <img src={CarTextImg} alt="Crent Logo" height={28} />
       </div>
 
@@ -28,10 +30,12 @@ const TopNavbar = () => {
             size="icon"
             className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8"
           >
-            <Settings className="h-4 w-4 text-gray-500" />
+            <Settings2 className="h-4 w-4 text-gray-500" />
           </Button>
         </div>
       </div>
+      </div>
+      
 
       <div className="flex items-center gap-4">
 
@@ -59,7 +63,7 @@ const TopNavbar = () => {
           size="icon"
           className="h-9 w-9 rounded-full border-gray-200"
         >
-          <Settings className="h-4 w-4 text-gray-600" />
+          <Settings2 className="h-4 w-4 text-gray-600" />
         </Button>
 
         <Avatar className="h-9 w-9 border border-gray-200 bg-blue-500">
