@@ -10,7 +10,7 @@ import { Search, Heart, Bell, Settings2 } from "lucide-react";
 
 const TopNavbar = () => {
   return (
-    <header className="w-full bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between">
+    <header className="w-full  bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between">
       <div className="flex items-center">
         <div className="flex items-center gap-2">
         <img src={CarTextImg} alt="Crent Logo" height={28} />
@@ -19,7 +19,6 @@ const TopNavbar = () => {
       <div className="flex-1 max-w-xl mx-8">
         <div className="relative">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
-          
           <Input
             placeholder="Search something here"
             className="h-10 pl-11 pr-10 rounded-full border-gray-200 text-sm placeholder:text-gray-400 focus-visible:ring-0"
@@ -36,9 +35,7 @@ const TopNavbar = () => {
       </div>
       </div>
       
-
       <div className="flex items-center gap-4">
-
         <Button
           variant="outline"
           size="icon"
@@ -69,7 +66,6 @@ const TopNavbar = () => {
         <Avatar className="h-9 w-9 border border-gray-200 bg-blue-500">
           <AvatarFallback className="text-white">FA</AvatarFallback>
         </Avatar>
-
       </div>
     </header>
   );

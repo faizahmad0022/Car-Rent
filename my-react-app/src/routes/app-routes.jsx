@@ -6,6 +6,7 @@ import PkiLoginScreen from "../pages/auth/PkIlogin";
 import VerifyOtpScreen from "../pages/auth/verifyOtp"; 
 import { Routes, Route, Navigate } from "react-router-dom";
 import ContinueAsGuestScreen from "../pages/auth/continueAsGuest";
+import PopularCarsCrent from "../pages/popularCarsCrent";
 
 
 const AppRoutes = () => {
@@ -20,6 +21,7 @@ const AppRoutes = () => {
       
       <Route element={<RentLayout />}>
         <Route path="/dashboard" element={<DashboardRcentCar />} />
+        <Route path="/popularCars" element={<PopularCarsCrent />} />
       </Route>
     </Routes>
   );
