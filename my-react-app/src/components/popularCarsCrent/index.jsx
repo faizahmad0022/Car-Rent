@@ -3,17 +3,7 @@
 const FilterSidebar = () => {
   return (
     <aside
-      className="
-        w-full
-        md:w-[260px]
-        bg-white
-        px-6
-        py-6
-        font-inter
-        text-[#596780]
-        md:min-h-screen
-      "
-    >
+      className="w-full md:w-[260px] bg-white px-6 py-6 font-inter text-[#596780] md:min-h-screen">
       {/* TYPE */}
       <div className="mb-8">
         <p className="text-xs font-semibold uppercase text-[#90A3BF] mb-4">
@@ -28,7 +18,10 @@ const FilterSidebar = () => {
           ["Coupe", 14, false],
           ["Hatchback", 14, false],
         ].map(([label, count, checked], i) => (
-          <label key={i} className="flex items-center gap-3 mb-3 cursor-pointer">
+          <label
+            key={i}
+            className="flex items-center gap-3 mb-3 cursor-pointer"
+          >
             <input
               type="checkbox"
               defaultChecked={checked}
@@ -53,7 +46,10 @@ const FilterSidebar = () => {
           ["6 Person", 12, false],
           ["8 or More", 16, false],
         ].map(([label, count, checked], i) => (
-          <label key={i} className="flex items-center gap-3 mb-3 cursor-pointer">
+          <label
+            key={i}
+            className="flex items-center gap-3 mb-3 cursor-pointer"
+          >
             <input
               type="checkbox"
               defaultChecked={checked}
@@ -102,7 +98,10 @@ const FilterSidebar = () => {
           ["Hybrid", false],
           ["EV", true],
         ].map(([label, checked], i) => (
-          <label key={i} className="flex items-center gap-3 mb-3 cursor-pointer">
+          <label
+            key={i}
+            className="flex items-center gap-3 mb-3 cursor-pointer"
+          >
             <input
               type="checkbox"
               defaultChecked={checked}
