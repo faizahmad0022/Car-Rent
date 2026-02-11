@@ -9,7 +9,7 @@ const ZvCarRcent = () => {
   return (
     <div className="bg-gray-50 p-5">
       <div className="w-full  mx-auto">
-        <div className="relative w-full h-[120px] rounded-lg overflow-hidden bg-[#3B6AF6] font-inter">
+        <div className="relative w-full h-30 rounded-lg overflow-hidden bg-[#3B6AF6] font-inter">
           <img
             src={BlueLinesFrame}
             alt="Background Pattern"
@@ -18,12 +18,12 @@ const ZvCarRcent = () => {
 
           <div className="relative z-10 flex items-center justify-between h-full px-6">
             <div className="flex items-center gap-4">
-              <div className="w-[72px] h-[72px] bg-white rounded-lg flex items-center justify-center">
+              <div className="w-18 h-18 bg-white rounded-lg flex items-center justify-center">
                 <img src={BrandCar} alt="Brand Logo" width={48} height={48} />
               </div>
 
               <div className="text-white">
-                <h2 className="text-[20px] font-semibold leading-[24px]">
+                <h2 className="text-[20px] font-semibold leading-6">
                   ZV Car Rent
                 </h2>
                 <p className="text-[14px] opacity-90 mt-1">
@@ -31,7 +31,7 @@ const ZvCarRcent = () => {
                 </p>
 
                 <div className="flex items-center gap-2 mt-2">
-                  <div className="flex gap-[2px] text-yellow-400 text-[14px]">
+                  <div className="flex gap-0.5 text-yellow-400 text-[14px]">
                     ★ ★ ★ ★ ☆
                   </div>
                   <span className="text-[13px] opacity-90">440+ Reviewer</span>

@@ -50,19 +50,19 @@ const DetailCrentCar = () => {
     <div className="w-full p-14 space-y-14 bg-gray-50">
       <div className="flex flex-col xl:flex-row gap-8">
         <div className="flex flex-col w-full xl:w-[55%]">
-          <Card className="relative w-full h-[300px] bg-[#3563E9] overflow-hidden border-none rounded-sm p-6 flex flex-col justify-between">
+          <Card className="relative w-full h-75 bg-[#3563E9] overflow-hidden border-none rounded-sm p-6 flex flex-col justify-between">
             <img
               src={LinesImg}
               alt=""
               className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             />
 
-            <div className="relative z-20 flex flex-col gap-4 max-w-[220px]">
+            <div className="relative z-20 flex flex-col gap-4 max-w-55">
               <h2 className="text-white text-xl leading-[1.2] tracking-tight">
                 Sports car with the best design and acceleration
               </h2>
 
-            <p className="text-white text-xs leading-relaxed font-medium opacity-90 w-[200px]">
+            <p className="text-white text-xs leading-relaxed font-medium opacity-90 w-50">
               Safety and comfort while driving a futuristic and elegant car
             </p>
             </div>
@@ -81,10 +81,10 @@ const DetailCrentCar = () => {
               <div
                 key={img.id}
                 onClick={() => setSelectedId(img.id)}
-                className={`flex-shrink-0 cursor-pointer rounded-[14px] transition-all ${
+                className={`shrink-0 cursor-pointer rounded-[14px] transition-all ${
                   selectedId === img.id
-                    ? "p-[6px] ring-2 ring-[#3563E9] ring-offset-2"
-                    : "p-[6px] border-2 border-transparent hover:border-gray-200"
+                    ? "p-1.5 ring-2 ring-[#3563E9] ring-offset-2"
+                    : "p-1.5 border-2 border-transparent hover:border-gray-200"
                 }`}
               >
                 <div className="w-24 h-20 bg-white rounded-[10px] overflow-hidden flex items-center justify-center">

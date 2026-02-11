@@ -13,7 +13,6 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const ContinueAsGuestScreen = () => {
   const dateRef = useRef(null);
-
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [address, setAddress] = useState("");
@@ -22,7 +21,6 @@ const ContinueAsGuestScreen = () => {
   const [expiryDate, setExpiryDate] = useState("");
   const [licenseNumber, setLicenseNumber] = useState("");
 
-  // Handle date selection and formatting
   const handleDateChange = (e) => {
     const d = new Date(e.target.value);
     if (!isNaN(d.getTime())) {
@@ -48,11 +46,11 @@ const ContinueAsGuestScreen = () => {
             className="w-40 h-auto mx-auto md:mx-0"
           />
 
-          <p className="text-white text-4xl w-[240px] mx-auto md:mx-0">
+          <p className="text-white text-4xl w-60 mx-auto md:mx-0">
             Drive in minutes. Rent smarter.
           </p>
 
-          <p className="text-white w-[260px] text-sm leading-relaxed mx-auto md:mx-0">
+          <p className="text-white w-65 text-sm leading-relaxed mx-auto md:mx-0">
             Search nearby cars, verify your license securely, and check out with
             your preferred payment method.
           </p>
@@ -66,7 +64,7 @@ const ContinueAsGuestScreen = () => {
 
         {/* CARD */}
         <div className="w-full md:w-auto flex justify-center">
-          <Card className="w-[600px] h-full rounded-sm shadow-xl">
+          <Card className="w-150 h-full rounded-sm shadow-xl">
             <CardHeader className="px-6 pt-3 pb-2">
               <div className="flex items-center justify-between">
                 <h2 className="text-lg font-semibold text-gray-900">
@@ -90,7 +88,6 @@ const ContinueAsGuestScreen = () => {
             </CardHeader>
 
             <CardContent className="px-6 pb-6 space-y-4">
-              {/* BASIC INFO */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex flex-col">
                   <label className="text-sm font-semibold text-gray-900">
@@ -100,7 +97,7 @@ const ContinueAsGuestScreen = () => {
                     placeholder="Enter your full name"
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
-                    className="mt-2 bg-gray-100 text-gray-400 !border-0 !ring-0 focus:!border-0 focus:!ring-0 placeholder:text-gray-400 "
+                    className="mt-2 bg-gray-100 text-gray-400 border-0! ring-0! focus:border-0! focus:ring-0! placeholder:text-gray-400 "
                   />
                 </div>
 
@@ -112,12 +109,11 @@ const ContinueAsGuestScreen = () => {
                     placeholder="Enter license number"
                     value={licenseNumber}
                     onChange={(e) => setLicenseNumber(e.target.value)}
-                    className="mt-2 bg-gray-100 text-gray-400 placeholder:text-gray-400 !border-0 !ring-0 focus:!border-0 focus:!ring-0"
+                    className="mt-2 bg-gray-100 text-gray-400 placeholder:text-gray-400 border-0! ring-0! focus:border-0! focus:ring-0!"
                   />
                 </div>
               </div>
 
-              {/* EMAIL + DATE */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex flex-col">
                   <label className="text-sm font-semibold text-gray-900">
@@ -127,7 +123,7 @@ const ContinueAsGuestScreen = () => {
                     placeholder="Enter your email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="mt-2 bg-gray-100 text-gray-400 placeholder:text-gray-400 !border-0 !ring-0 focus:!border-0 focus:!ring-0"
+                    className="mt-2 bg-gray-100 text-gray-400 placeholder:text-gray-400 border-0! ring-0! focus:border-0! focus:ring-0!"
                   />
                 </div>
 
@@ -143,10 +139,9 @@ const ContinueAsGuestScreen = () => {
                       value={expiryDate}
                       placeholder="M-D-YYYY"
                       readOnly
-                      className="bg-gray-100 !border-0 !ring-0 focus:!border-0 focus:!ring-0 pr-10 text-gray-400 placeholder:text-gray-400 cursor-pointer"
+                      className="bg-gray-100 border-0! ring-0! focus:border-0! focus:ring-0! pr-10 text-gray-400 placeholder:text-gray-400 cursor-pointer"
                     />
 
-                    {/* Hidden date input positioned over the visible input */}
                     <input
                       type="date"
                       ref={dateRef}
@@ -154,7 +149,6 @@ const ContinueAsGuestScreen = () => {
                       className="absolute left-0 top-0 w-full h-full opacity-0 cursor-pointer z-10"
                     />
 
-                    {/* Calendar icon */}
                     <CalendarDays
                       onClick={() => dateRef.current?.focus()}
                       className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-700 cursor-pointer"
@@ -163,7 +157,6 @@ const ContinueAsGuestScreen = () => {
                 </div>
               </div>
 
-              {/* MOBILE + UPLOAD */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
                 <div className="flex flex-col gap-4">
                   <div className="flex flex-col">
@@ -174,7 +167,7 @@ const ContinueAsGuestScreen = () => {
                       placeholder="+96 0000000000"
                       value={mobile}
                       onChange={(e) => setMobile(e.target.value)}
-                      className="mt-2 bg-gray-100 text-gray-400 placeholder:text-gray-400 !border-0 !ring-0 focus:!border-0 focus:!ring-0"
+                      className="mt-2 bg-gray-100 text-gray-400 placeholder:text-gray-400 border-0! ring-0! focus:border-0! focus:ring-0!"
                     />
                   </div>
 
@@ -186,8 +179,8 @@ const ContinueAsGuestScreen = () => {
                       placeholder="P.O Box: 1071, P. C: 111 Al Ghubra"
                       value={address}
                       onChange={(e) => setAddress(e.target.value)}
-                      className="mt-2 bg-gray-100 text-gray-400 placeholder:text-gray-400 !border-0 !ring-0 focus:!border-0 focus:!ring-0 resize-none"
-                      rows={3}
+                      className="mt-2 bg-gray-100 text-gray-400 placeholder:text-gray-400 border-0! ring-0! focus:border-0! focus:ring-0! resize-none"
+                      rows={3} 
                     />
                   </div>
                 </div>

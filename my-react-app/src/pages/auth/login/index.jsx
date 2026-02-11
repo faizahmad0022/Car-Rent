@@ -33,11 +33,11 @@ const login = () => {
             className="w-40 h-auto mx-auto md:mx-0"
           />
 
-          <p className="text-white text-4xl w-[240px]  mx-auto md:mx-0">
+          <p className="text-white text-4xl w-60  mx-auto md:mx-0">
             Drive in minutes. Rent smarter.
           </p>
 
-          <p className="text-white w-[260px] md:w-[260px] text-sm leading-relaxed mx-auto md:mx-0">
+          <p className="text-white w-65 md:w-65 text-sm leading-relaxed mx-auto md:mx-0">
             Search nearby cars, verify your license securely, and check out with
             your preferred payment method. PKI-ready for enterprise-grade
             security.
@@ -51,7 +51,7 @@ const login = () => {
         </div>
 
         <div className="w-full md:w-auto flex justify-center">
-          <div className="w-[360px] bg-white rounded-sm p-6 shadow-xl border border-blue-500 flex-shrink-0">
+          <div className="w-90 bg-white rounded-sm p-6 shadow-xl border border-blue-500 shrink-0">
             <h2 className="text-2xl font-semibold text-gray-900">Login</h2>
             <p className="text-sm text-gray-400 mt-1">
               Use your email or mobile number. PKI supported for enterprise

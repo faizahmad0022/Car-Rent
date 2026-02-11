@@ -16,7 +16,7 @@ const CrentCard = () => {
         </div>
 
         <div className="my-6 flex justify-center">
-          <img src={CarImg} alt="Car" className="w-[220px] object-contain" />
+          <img src={CarImg} alt="Car" className="w-55 object-contain" />
         </div>
 
         <div className="flex items-center justify-between text-[#90A3BF] text-[12px] mb-5">

@@ -113,7 +113,7 @@ const SearchFilterBar = () => {
       <Divider />
 
       <div className="flex-1 pl-3">
-        <div className="flex items-center gap-2 border-1 rounded-lg px-4 py-2.5">
+        <div className="flex items-center gap-2 border rounded-lg px-4 py-2.5">
           <Search className="w-6 h-6  text-gray-500" />
           <input
             type="text"
@@ -127,7 +127,7 @@ const SearchFilterBar = () => {
 };
 
 const FieldWrapper = ({ label, children }) => (
-  <div className="flex flex-col px-3 min-w-[150px]">
+  <div className="flex flex-col px-3 min-w-37.5">
     <span className="text-[11px] text-gray-400 mb-1">{label}</span>
     {children}
   </div>

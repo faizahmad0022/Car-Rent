@@ -3,7 +3,7 @@
 const FilterSidebar = () => {
   return (
     <aside
-      className="w-full md:w-[260px] bg-white px-6 py-6 font-inter text-[#596780] md:min-h-screen">
+      className="w-full md:w-65 bg-white px-6 py-6 font-inter text-[#596780] md:min-h-screen">
       {/* TYPE */}
       <div className="mb-8">
         <p className="text-xs font-semibold uppercase text-[#90A3BF] mb-4">
@@ -73,7 +73,7 @@ const FilterSidebar = () => {
           min="0"
           max="100"
           defaultValue="80"
-          className="w-full h-[6px] rounded-full appearance-none"
+          className="w-full h-1.5 rounded-full appearance-none"
           style={{
             background: "linear-gradient(to right, #3563E9 80%, #E0E9F4 80%)",
           }}
@@ -123,7 +123,7 @@ const FilterSidebar = () => {
           min="0"
           max="1000"
           defaultValue="500"
-          className="w-full h-[6px] rounded-full appearance-none"
+          className="w-full h-1.5 rounded-full appearance-none"
           style={{
             background: "linear-gradient(to right, #3563E9 50%, #E0E9F4 50%)",
           }}

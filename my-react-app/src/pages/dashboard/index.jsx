@@ -13,17 +13,17 @@ const DashboardRcentCar = () => {
   return (
     <div className="bg-gray-50 px-4 sm:px-6 xl:px-14 py-6">
       <div className="flex flex-col md:flex-row items-center justify-center gap-5 mb-10">
-        <Card className="relative w-full  h-[300px] overflow-hidden border-none rounded-sm p-6 flex flex-col justify-between">
+        <Card className="relative w-full  h-75 overflow-hidden border-none rounded-sm p-6 flex flex-col justify-between">
           <img
             src={CarLinesImg}
             alt="Circle Lines Background"
             className="absolute top-0 left-0 w-full h-full object-cover z-0 pointer-events-none"
           />
-          <div className="relative z-20 flex flex-col gap-4 max-w-[170px]">
+          <div className="relative z-20 flex flex-col gap-4 max-w-42.5">
             <h2 className="text-white text-xl leading-[1.2] tracking-tight">
               The Best Platform for Car Rental
             </h2>
-            <p className="text-white text-xs leading-relaxed font-medium opacity-90 w-[200px]">
+            <p className="text-white text-xs leading-relaxed font-medium opacity-90 w-50">
               Ease of doing a car rental safely and reliably. Of course at a low
               price.
             </p>
@@ -40,17 +40,17 @@ const DashboardRcentCar = () => {
           </div>
         </Card>
 
-        <Card className="relative w-full  h-[300px] bg-[#3563E9] overflow-hidden border-none rounded-sm p-6 flex flex-col justify-between">
+        <Card className="relative w-full  h-75 bg-[#3563E9] overflow-hidden border-none rounded-sm p-6 flex flex-col justify-between">
           <img
             src={LinesImg}
             alt="Decorative Lines"
             className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none"
           />
-          <div className="relative z-20 flex flex-col gap-4 max-w-[170px]">
+          <div className="relative z-20 flex flex-col gap-4 max-w-42.5">
             <h2 className="text-white text-xl leading-[1.2] tracking-tight">
               Easy way to rent a car at a low price
             </h2>
-            <p className="text-white text-xs leading-relaxed font-medium opacity-90 w-[200px]">
+            <p className="text-white text-xs leading-relaxed font-medium opacity-90 w-50">
               Providing cheap car rental services and safe and comfortable
               facilities.
             </p>

@@ -35,11 +35,11 @@ const PkiLoginScreen = () => {
             className="w-40 h-auto mx-auto md:mx-0"
           />
 
-          <p className="text-white text-4xl w-[240px] mx-auto md:mx-0">
+          <p className="text-white text-4xl w-60 mx-auto md:mx-0">
             Drive in minutes. Rent smarter.
           </p>
 
-          <p className="text-white w-[260px] md:w-[260px] text-sm leading-relaxed mx-auto md:mx-0">
+          <p className="text-white w-65 md:w-65 text-sm leading-relaxed mx-auto md:mx-0">
             Search nearby cars, verify your license securely, and check out with
             your preferred payment method. PKI-ready for enterprise-grade
             security.
@@ -53,7 +53,7 @@ const PkiLoginScreen = () => {
         </div>
 
         <div className="w-full md:w-auto flex justify-center">
-          <Card className="w-[360px] rounded-2xl p-6 shadow-xl border border-blue-500 flex-shrink-0">
+          <Card className="w-90 rounded-2xl p-6 shadow-xl border border-blue-500 shrink-0">
             <div className="flex justify-between items-center mb-2">
               <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-blue-500" />
@@ -125,7 +125,7 @@ const PkiLoginScreen = () => {
                 placeholder="Enter Passphrase"
                 value={passphrase}
                 onChange={(e) => setPassphrase(e.target.value)}
-                className="mt-2 h-12 rounded-md bg-gray-100 font-semibold border-none !placeholder-gray-300"
+                className="mt-2 h-12 rounded-md bg-gray-100 font-semibold border-none placeholder-gray-300!"
               />
             </div>
 

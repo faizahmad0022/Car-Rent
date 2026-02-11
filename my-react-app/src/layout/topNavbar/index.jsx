@@ -1,40 +1,36 @@
-import {
-  Avatar,
-  AvatarFallback,
-} from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import CarTextImg from "@/assets/cartextimg.svg";
 import { Search, Heart, Bell, Settings2 } from "lucide-react";
 
-
 const TopNavbar = () => {
   return (
-    <header className="w-full  bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between">
+    <header className="w-full  bg-white border-b border-gray-200 px-12 py-5 flex items-center justify-between">
       <div className="flex items-center">
         <div className="flex items-center gap-2">
-        <img src={CarTextImg} alt="Crent Logo" height={28} />
-      </div>
+          <img src={CarTextImg} alt="Crent Logo" height={28} />
+        </div>
 
-      <div className="flex-1 max-w-xl mx-8">
-        <div className="relative">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
-          <Input
-            placeholder="Search something here"
-            className="h-10 pl-11 pr-10 rounded-full border-gray-200 text-sm placeholder:text-gray-400 focus-visible:ring-0"
-          />
+        <div className="flex-1 max-w-xl mx-8">
+          <div className="relative">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
+            <Input
+              placeholder="Search something here"
+              className="h-10 pl-11 pr-10 w-90 rounded-full border-gray-200 text-sm placeholder:text-gray-400 focus-visible:ring-0"
+            />
 
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8"
-          >
-            <Settings2 className="h-4 w-4 text-gray-500" />
-          </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8"
+            >
+              <Settings2 className="h-4 w-4 text-gray-500" />
+            </Button>
+          </div>
         </div>
       </div>
-      </div>
-      
+
       <div className="flex items-center gap-4">
         <Button
           variant="outline"
