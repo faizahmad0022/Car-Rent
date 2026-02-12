@@ -8,6 +8,7 @@ import DetailCrentCar from "../pages/DetailCrentCar";
 import VerifyOtpScreen from "../pages/auth/verifyOtp"; 
 import PaymentCarRcent from "../pages/paymentCarRcent";
 import PopularCarsCrent from "../pages/popularCarsCrent";
+import BookingConfirmation from "../pages/bookingConfirmation";
 import { Routes, Route, Navigate } from "react-router-dom";
 import ContinueAsGuestScreen from "../pages/auth/continueAsGuest";
 
@@ -28,6 +29,7 @@ const AppRoutes = () => {
         <Route path="/popularCars" element={<PopularCarsCrent />} />
         <Route path="/detailCrentCar" element={<DetailCrentCar />} />
         <Route path="/paymentCarRcent" element={<PaymentCarRcent />} />
+        <Route path="/BookingConfirmation" element={<BookingConfirmation />} />
       </Route>
     </Routes>
   );
