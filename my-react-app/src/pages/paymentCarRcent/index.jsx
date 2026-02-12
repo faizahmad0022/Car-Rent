@@ -14,8 +14,10 @@ import { Checkbox } from "@/components/ui/checkbox";
 import CarBlueLinesImg from "@/assets/LookBlueCar.svg";
 import { Card, CardContent } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Link, useNavigate } from "react-router-dom";
 
 const PaymentCarRcent = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-full bg-[#F6F7F9] p-6  font-sans ">
       <div className=" mx-auto flex flex-col lg:flex-row items-start gap-8">
@@ -371,7 +373,9 @@ const PaymentCarRcent = () => {
                 </div>
               </div>
 
-              <Button className="bg-[#3563E9] hover:bg-[#3563E9] text-white px-6 py-6 rounded-md text-base font-semibold mt-4 shadow-lg shadow-blue-100">
+              <Button className="bg-[#3563E9] hover:bg-[#3563E9] text-white px-6 py-6 rounded-md text-base font-semibold mt-4 shadow-lg shadow-blue-100"
+              onClick={() => navigate("/bookingConfirmation")}
+              >
                 Rent Now
               </Button>
 
