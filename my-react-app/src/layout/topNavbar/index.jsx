@@ -3,8 +3,8 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import CarTextImg from "@/assets/cartextimg.svg";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Search, Heart, Bell, Settings2 } from "lucide-react";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const TopNavbar = () => {
   return (
