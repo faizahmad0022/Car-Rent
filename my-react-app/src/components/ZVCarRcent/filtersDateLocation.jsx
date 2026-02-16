@@ -128,7 +128,7 @@ const SearchFilterBar = () => {
 
 const FieldWrapper = ({ label, children }) => (
   <div className="flex flex-col px-3 min-w-37.5">
-    <span className="text-[11px] text-gray-400 mb-1">{label}</span>
+    <span className="text-[11px] text-black font-semibold  mb-1">{label}</span>
     {children}
   </div>
 );

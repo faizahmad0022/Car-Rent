@@ -5,10 +5,10 @@ import CrentCard from "@/components/dashboardComponents/CrentCard";
 import { Button } from "@/components/ui/button";
 import DateLocationFilters from "@/components/dashboardComponents/dateLocationFilters";
 
-const PopularCarsCrent = () => {
+const PopularCarsCrent = () => {  
   return (
-    <div className="bg-gray-50 min-h-screen py-5">
-      <div className="w-full max-w-7xl mx-auto">
+    <div className="bg-gray-50 ">
+      <div className="w-full mx-auto">
         <div className="flex flex-col md:flex-row w-full">
           <FilterSidebar />
           <div className="flex-1 p-5">

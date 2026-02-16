@@ -3,7 +3,7 @@
 const FilterSidebar = () => {
   return (
     <aside
-      className="w-full md:w-65 bg-white px-6 py-6 font-inter text-[#596780] md:min-h-screen">
+      className="w-full md:w-65 bg-white px-6 py-6 font-inter text-[#596780]">
       {/* TYPE */}
       <div className="mb-8">
         <p className="text-xs font-semibold uppercase text-[#90A3BF] mb-4">
