@@ -4,12 +4,13 @@ import ZvCarRcent from "../pages/ZVCarRcent";
 import SignUpScreen from "../pages/auth/signup";
 import DashboardRcentCar from "../pages/dashboard";
 import PkiLoginScreen from "../pages/auth/PkIlogin";
+import CarCrentAgency from "../pages/carCrentAgency";
 import DetailCrentCar from "../pages/DetailCrentCar";
 import VerifyOtpScreen from "../pages/auth/verifyOtp"; 
 import PaymentCarRcent from "../pages/paymentCarRcent";
 import PopularCarsCrent from "../pages/popularCarsCrent";
-import BookingConfirmation from "../pages/bookingConfirmation";
 import { Routes, Route, Navigate } from "react-router-dom";
+import BookingConfirmation from "../pages/bookingConfirmation";
 import ContinueAsGuestScreen from "../pages/auth/continueAsGuest";
 
 
@@ -28,8 +29,9 @@ const AppRoutes = () => {
         <Route path="/dashboard" element={<DashboardRcentCar />} />
         <Route path="/popularCars" element={<PopularCarsCrent />} />
         <Route path="/detailCrentCar" element={<DetailCrentCar />} />
+        <Route path="/carCrentAgency" element={<CarCrentAgency />} />
         <Route path="/paymentCarRcent" element={<PaymentCarRcent />} />
-        <Route path="/BookingConfirmation" element={<BookingConfirmation />} />
+        <Route path="/bookingConfirmation" element={<BookingConfirmation />} />
       </Route>
     </Routes>
   );
